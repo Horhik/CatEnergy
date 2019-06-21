@@ -1,19 +1,38 @@
 {
-  "name": "catenergy",
-  "version": "1.0.0",
-  "description": "html academy project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Horhik/CatEnergy.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Horhik/CatEnergy/issues"
-  },
-  "homepage": "https://github.com/Horhik/CatEnergy#readme"
+    "name": "catenergy",
+    "version": "1.0.0",
+    "description": "html academy project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Horhik/CatEnergy.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Horhik/CatEnergy/issues"
+    },
+    "homepage": "https://github.com/Horhik/CatEnergy#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.6.0",
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-less": "^4.0.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-sourcemaps": "^2.6.5"
+    },
+    "dependencies": {
+        "gulp-csso": "^3.0.1",
+        "postcss-cli": "^6.1.2"
+    },
+    "browserslist": [
+        "last 1 version",
+        "> 1%",
+        "IE 10"
+    ]
 }
