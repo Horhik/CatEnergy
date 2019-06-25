@@ -1,0 +1,50 @@
+.social{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin-top: 30px;
+    padding: 22px 0px;
+    width: 45%; 
+    position: relative;
+    &::before{
+        content: '';
+        height: 1px;
+        background-color: black;
+        opacity: .1;
+        width: 88vw;
+        position: absolute;
+        right: -77px;
+        top: 1px;
+}
+    &::after{
+        content: '';
+        height: 1px;
+        background-color: black;
+        opacity: .1;
+        width: 88vw;
+        position: absolute;
+        right: -77px;
+        bottom: -1px;
+    
+    
+    }
+}
+ .social__items{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+.soc(@socIndex: 1, @socTo) when (@socIndex <= @socTo){
+    .social li:nth-child(@{socIndex}) .social__items{
+        background-image: url("../../src/svg/soc-@{socIndex}.svg")
+
+    }
+    .soc(@socIndex + 1, @socTo)
+}
+
+.soc(@socTo: 3);

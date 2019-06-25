@@ -123,10 +123,10 @@
             </div>
             <div class="big-range">
                 <div class="big-range__images">
-                    <img src="src/img/before-mobile.png" alt="кот ДО">
-                    <img src="src/img/after-mobile.png" alt=" кот После">
+                    <img src="src/img/before-mobile.png" alt="кот ДО" class="big-range__before">
+                    <img src="src/img/after-mobile.png" alt=" кот После" class="visually-hidden big-range__after">
                 </div>
-                <div class="big-range__images">
+                <div class="big-range__controls">
                     <span class="text big-range__text">Было</span>
                     <input type="range" id="big-range__range" class="big-range__range">
                     <span class="text big-range__text">Стало</span>
@@ -136,22 +136,21 @@
         <section class="adress">
             <h2 class="h2 adress__h2 visually-hidden">Наш адрес</h2>
             <div class="adress--inner">
-                <pre class="text">
-                    приглашаем  
-                    к сотрудничеству  
-                    дилеров!</pre>
-                <pre class="text text--small">
-                    ул. Большая 
-                    Конюшенная, д. 19/8   
-                    Санкт-Петербург
-                </pre>
+                <p class="text adress__text">
+                    приглашаем <br> к сотрудничеству <br> дилеров!
+                </p>
+                <p class="text text--small adress__text">
+                    ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург
+                </p>
             </div>
-            <div class="yamap"></div>
+            <div class="yamap">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62885c4a24c7674472bb31269239a9ee2bd158ed9378ed80068bca6324bad4af&amp;width=100%25&amp;height=360&amp;lang=en_FR&amp;scroll=true"></script>
+            </div>
         </section>
     </main>
     <footer class="footer main-footer">
         <img src="src/svg/text-logo.svg" alt="Cat Energy" class="footer__logo" width="128px" height="24px">
-        <ul class="scoial">
+        <ul class="social">
             <li>
                 <a href="https://vk.com" class="social__items">VK</a>
             </li>
@@ -183,4 +182,4 @@
     </footer>
 </body>
 
-</html>s
+</html>
