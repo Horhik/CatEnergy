@@ -1,0 +1,25 @@
+.page-catalog{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.page-catalog__h1{
+    line-height: 60px;
+    display: inline-block;
+    padding: 16px 0 28px 0;
+    margin-left: -20px;
+    position: relative;
+    width: 100vw;
+    &::before{
+        .stick();
+        width: 100vw;
+        top: 0;
+    }
+    &::after{
+        .stick();
+        width: 100vw;
+        bottom: 0;
+
+    }
+}

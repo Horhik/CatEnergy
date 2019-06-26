@@ -214,8 +214,6 @@ body {
 .cards__title {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
   font-weight: 400;
@@ -253,6 +251,12 @@ body {
       flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
+}
+@media (max-width: 260px) {
+  .cards__title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .hiwork {
   margin: 0;
@@ -405,6 +409,229 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+.page-catalog {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.page-catalog__h1 {
+  line-height: 60px;
+  display: inline-block;
+  padding: 16px 0 28px 0;
+  margin-left: -20px;
+  position: relative;
+  width: 100vw;
+}
+.page-catalog__h1::before {
+  content: '';
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  top: 0;
+}
+.page-catalog__h1::after {
+  content: '';
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  width: 100vw;
+  bottom: 0;
+}
+.catalog__button {
+  padding: 9.7px;
+}
+.goods {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: -1px;
+}
+.goods--inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+}
+.goods--wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.goods__link {
+  font-size: 16px;
+  width: 74px;
+  padding-top: 22px;
+  padding-bottom: 11px;
+  line-height: 20px;
+  text-align-last: left;
+}
+.goods__link--still {
+  width: auto;
+  padding-top: 18px;
+  padding-bottom: 0;
+}
+.goods__text--still {
+  margin-bottom: 21px;
+}
+.goods__item {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 2px 21px;
+  margin-bottom: 21px;
+  position: relative;
+}
+.goods__item::after {
+  content: '';
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  bottom: -23px;
+  width: 100%;
+}
+.goods__img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.goods__table {
+  margin-left: -2px;
+  margin-top: 2px;
+}
+.catalog__td {
+  font-size: 12px;
+  line-height: 13px;
+  color: #444444;
+  text-align: right;
+}
+.catalog__td--label {
+  text-align: left;
+}
+.goods__still {
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 26px;
+}
+.goods__button--still {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  background-color: #f2f2f2;
+  color: #111111;
+  font-size: 16px;
+  padding: 8px;
+}
+.additional {
+  padding: 0 20px;
+  margin: 0;
+}
+.additional--inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.additional--inner p {
+  margin: 0;
+}
+.additional__h2 {
+  width: auto;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 31px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 34px;
+}
+.additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.additional__item {
+  display: -ms-flexbox;
+  display: flex ;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.additional__text {
+  margin: 0;
+  text-align: left;
+  line-height: 16px;
+  padding-top: 14px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.additional__button {
+  margin-top: 14px;
+  padding-bottom: 10px;
+  margin-bottom: 17px;
+  position: relative;
+}
+.additional__item:not(:last-child) .additional__button::after {
+  content: '';
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  width: 100%;
+}
+.additional__item:first-child .additional__text:before {
+  content: '';
+  height: 1px;
+  background-color: black;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 100%;
+}
+.additional__gift {
+  margin-bottom: 63px;
+  padding: 65px 59px 43px;
+  margin-top: 40px;
+}
+.gift {
+  background-image: url(../../src/img/gift-photo-mobile.jpg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.gift__icon {
+  margin-bottom: 60px;
+  fill: #ffffff;
+}
+.gift__text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
 }
 .adress--inner {
   display: -ms-flexbox;
