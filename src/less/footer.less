@@ -14,10 +14,23 @@
     width: 100%;
     margin-top: 18px;
     bottom: 14px;
+    transition: .4s;
+    fill: @gray;
+    &:focus, &:hover{
+        transition: .4s;
+        fill: @green;
+    }
+    &:active{
+        transition: .4s;
+        opacity: 0.3;
+    }
 }
 
 .footer__link{
     text-decoration: none;
     color: @gray;
+    &:active{
+        opacity: 0.3;
+    }
 
 }

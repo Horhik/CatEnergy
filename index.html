@@ -21,21 +21,21 @@
             <button type="button" class="burger logo__burger">открыть меню
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="20px"
                  viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-            <rect y="16" width="24" height="2"/>
-            <rect y="8" width="24" height="2"/>
-            <rect width="24" height="2"/>
+            <rect class="burger__stick" y="16" width="24" height="2"/>
+            <rect class="burger__stick" y="8" width="24" height="2"/>
+            <rect class="burger__stick" width="24" height="2"/>
             </svg></button>
         </div>
-        <nav>
+        <nav class="page-nav--wrapper">
             <ul class="page-nav">
                 <li class="page-nav__item page-nav__item--active">
-                    <a>Главная</a>
+                    <a href="#">Главная</a>
                 </li>
                 <li class="page-nav__item">
                     <a href="app/html/catalog.html">Каталог продукции</a>
                 </li>
                 <li class="page-nav__item">
-                    <a href="app/html/program.html">Подбор программы</a>
+                    <a href="app/html/form.html">Подбор программы</a>
                 </li>
             </ul>
         </nav>
@@ -123,12 +123,12 @@
             </div>
             <div class="big-range">
                 <div class="big-range__images">
-                    <img src="src/img/before-mobile.png" alt="кот ДО" class="big-range__before">
+                    <img src="src/img/before-mobile.png" alt="кот ДО" class="big-range__before" style="opacity: 100%">
                     <img src="src/img/after-mobile.png" alt=" кот После" class="visually-hidden big-range__after">
                 </div>
                 <div class="big-range__controls">
                     <span class="text big-range__text">Было</span>
-                    <input type="range" id="big-range__range" class="big-range__range">
+                    <input type="range" id="big-range__range" class="big-range__range" min="1" max="100" step="1" value="1">
                     <span class="text big-range__text">Стало</span>
                 </div>
             </div>
@@ -180,6 +180,8 @@
             </a>
         </div>
     </footer>
+    <script src="app/js/range-slider.js"></script>
+    <script src="app/js/burger.js" "></script>
 </body>
 
 </html>

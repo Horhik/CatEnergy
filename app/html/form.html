@@ -16,28 +16,26 @@
             <a href="../../index.html" class="logo">
                 <img src="../../src/svg/logo-mobile.svg" alt="логотип CatEnergy" width="33px" height="38px">
             </a>
-            <a href="../../index.html">
-                <img src="../../src/svg/text-logo.svg" alt="Cat Energy" class="logo__text" width="101px" height="18px">
-            </a>
+            <img src="../../src/svg/text-logo.svg" alt="Cat Energy" class="logo__text" width="101px" height="18px">
             <!--picture will be in burger-->
             <button type="button" class="burger logo__burger">открыть меню
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="20px"
                  viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
-            <rect y="16" width="24" height="2"/>
-            <rect y="8" width="24" height="2"/>
-            <rect width="24" height="2"/>
+            <rect class="burger__stick" y="16" width="24" height="2"/>
+            <rect class="burger__stick" y="8" width="24" height="2"/>
+            <rect class="burger__stick" width="24" height="2"/>
             </svg></button>
         </div>
-        <nav>
+        <nav class="page-nav--wrapper">
             <ul class="page-nav">
                 <li class="page-nav__item page-nav__item--active">
-                    <a>Главная</a>
+                    <a href="#">Главная</a>
                 </li>
                 <li class="page-nav__item">
                     <a href="app/html/catalog.html">Каталог продукции</a>
                 </li>
                 <li class="page-nav__item">
-                    <a href="app/html/program.html">Подбор программы</a>
+                    <a href="app/html/form.html">Подбор программы</a>
                 </li>
             </ul>
         </nav>
@@ -134,6 +132,8 @@
             </a>
         </div>
     </footer>
+    <script src="../../app/js/burger.js" "></script>
+
 </body>
 
 </html>

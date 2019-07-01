@@ -64,9 +64,18 @@
     font-weight: 400;
     font-size: 14px;
     display: inline-block;
+    border-color: @green;
     border: 0;
     background-color: @green;
     padding: 9.5px; 
+    transition: .4s;
+    &:hover, &:focus{
+        background-color: saturate(darken(@green, 4%), 4%); // #5eaa2f;
+    }
+    &:active{
+        background-color: saturate(darken(@green, 4%), 4%); // #5eaa2f;
+        color: shade(@white, 30%);
+    }
 }
 
 .button--arrow{
@@ -75,12 +84,32 @@
     font-family: @oswald;
     text-transform: uppercase;
     font-style: 16px;
+    position: relative;
     font-weight: 400;
+    &:hover::after, &:focus::after{
+        transition: .4s ease-in-out;
 
+        transform: translateX(10px) ;
+
+    }
     &::after{
         content: url(../../src/svg/arrow.svg);
+
         display: block;
-        width: 24px;
+        width: 28px;
         margin-left: 10px;
+
+    }
+    &::before{
+        content: url(../../src/svg/arrow-stic.svg);
+        width: 28px;
+        height: 3px;
+        position: absolute;
+        top: 24px;
+        left: 95px;
+    }
+    &:active{
+        transition: .4s;
+        opacity: 0.3;
     }
 }

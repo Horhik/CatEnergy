@@ -5,4 +5,34 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+    transition: all .4s;
+
+    &:hover, &focus{
+        outline: none;
+        transform: scale(1.1)
+    }
+    &--cross{
+        transition: 0.5s;
+    }
+    &__stick--active{
+        transition: 0.4s;
+        &:first-child{
+            transform: rotate(-45deg) translateY(-8px);
+            transform-origin: center;
+            
+        }
+        &:last-child{
+            transform: rotate(45deg) translateY(8px);
+            transform-origin: center;
+        
+        }
+        &:nth-child(2){
+            opacity: 0;
+        }
+    }
+    &__stick{
+        transition: 0.5s;
+    }
+    
 }
+

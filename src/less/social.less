@@ -37,14 +37,23 @@
     height: 20px;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: @dark;
+    transition: all .4s;
+    &:hover, &:focus{
+        background-color: @green;
+    }
+    &:active{
+        opacity: .3;
+    }
  }
 
 .soc(@socIndex: 1, @socTo) when (@socIndex <= @socTo){
     .social li:nth-child(@{socIndex}) .social__items{
-        background-image: url("../../src/svg/soc-@{socIndex}.svg")
+        mask: url("../../src/svg/soc-@{socIndex}.svg") no-repeat center;
 
     }
     .soc(@socIndex + 1, @socTo)
 }
 
 .soc(@socTo: 3);
+
